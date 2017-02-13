@@ -1,0 +1,263 @@
+body {
+  background: #111;
+  font-weight: 300;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-rendering: optimizeLegibility;
+  opacity: 1;
+}
+.background:after {
+  content: '';
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border: 1px solid rgba(255,255,255,.2);
+}
+.wrapper {
+  display: none;
+}
+
+
+/* 1. Intro Keyframe
+--------------------------------------- */
+#intro {
+  position: fixed;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.name {
+  font-size: 35px;
+  letter-spacing: 12px;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.byline { 
+  font-size: 15px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: 300;
+}
+.ampersand {
+  font-family: "Adobe Caslon Pro", "brandon-grotesque";
+  font-style: italic;
+}
+
+/* 2. Explosion/Images/Links Structure and Text
+--------------------------------------- */
+#explosion,
+#images {
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+}
+.explosion-byline,
+.images-byline {
+  position: fixed;
+  top: 63%;
+  left: 10%;
+  color: white;
+  max-width: 22%;
+  opacity: 0;
+}
+.images-byline-2 {
+  text-align: center;
+  position: fixed;
+  top: 93%;
+  left: 25%;
+  color: white;
+  width: 50%;
+  opacity: 0;
+}
+
+/* 3. Explosion Keyframe
+--------------------------------------- */
+#domExplosionList {
+  position: fixed;
+  width: 410px;
+  top: 100%;
+  right: 25%;
+}
+.dom-explosion-item-1, .dom-explosion-item-2, .dom-explosion-item-3, .dom-explosion-item-4, .dom-explosion-item-5, .dom-explosion-item-6, .dom-explosion-item-7, .dom-explosion-item-8, .dom-explosion-item-9, .dom-explosion-item-10, .dom-explosion-item-11, .dom-explosion-item-12, .dom-explosion-item-13, .dom-explosion-item-14, .dom-explosion-item-15, .dom-explosion-item-16{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.dom-explosion-item-1 {
+  background-image: url(../img/1.jpg);
+}
+.dom-explosion-item-2{
+  background-image: url(../img/2.jpg);
+}
+.dom-explosion-item-3{
+  background-image: url(../img/3.jpg);
+}
+.dom-explosion-item-4{
+  background-image: url(../img/4.jpg);
+}
+.dom-explosion-item-5{
+  background-image: url(../img/5.jpg);
+}
+.dom-explosion-item-6{
+  background-image: url(../img/6.jpg);
+}
+.dom-explosion-item-7{
+  background-image: url(../img/7.jpg);
+}
+.dom-explosion-item-8{
+  background-image: url(../img/8.jpg);
+}
+.dom-explosion-item-9{
+  background-image: url(../img/9.jpg);
+}
+.dom-explosion-item-10{
+  background-image: url(../img/10.jpg);
+}
+.dom-explosion-item-11{
+  background-image: url(../img/11.jpg);
+}
+.dom-explosion-item-12{
+  background-image: url(../img/12.jpg);
+}
+.dom-explosion-item-13{
+  background-image: url(../img/13.jpg);
+}
+.dei-1  { top: 0;   left: 0;  }
+.dei-2  { top: 0;   left: 210px; }
+.dei-3  { top: 0;   left: 420px; }
+.dei-4  { top: 0;   left: 630px }
+.dei-5  { top: 210px;   left: 0;  }
+.dei-6  { top: 210px;   left: 210px; }
+.dei-7  { top: 210px;   left: 420px; }
+.dei-8  { top: 210px;   left: 630px }
+.dei-9  { top: 420px;   left: 0;  }
+.dei-10 { top: 420px;   left: 210px; }
+.dei-11 { top: 420px;   left: 420px; }
+.dei-12 { top: 420px;   left: 630px }
+
+
+/* 3. Images Keyframe
+--------------------------------------- */
+.raw-page {
+  position: fixed;
+  width: 30%;
+  border-radius: 6px;
+  box-shadow: inset 0 0 1px rgba(255,255,255,.3);
+  border: 1px solid rgba(0,0,0,.2);
+  background-clip: padding-box;
+}
+#mediumHomepage {
+  top: 100%;
+  right: 5%;
+}
+.iphone {
+  position: fixed;
+  right: 40%;
+  top: 102%;
+  width: 16%;
+}
+.iphone-frame {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  z-index: 2;
+  opacity: 0;
+}
+.iphone-viewport {
+  width: 340px;
+  height: 289px;
+  position: absolute;
+  top: 6%; 
+  left: 3%;
+  overflow: hidden;
+}
+.iphone-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#medium-profile-iphone {
+  z-index: 2;
+}
+
+/* 3. Links Keyframe
+--------------------------------------- */
+#links {
+  position: fixed;
+  top: 0%;
+  left: 15%;
+  width: 70%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  background-image: url(../img/last.jpg);
+  background-size: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid rgba(255,255,255,.5);
+  color: rgba(255,255,255,.8);
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  border-color: #fff;
+}
+.twitter {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+/* 4. Handling resize and small devices
+--------------------------------------- */
+.error {
+  display: none;
+  position: fixed;
+  width: 80%;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  top: 30%;
+  left: 10%;
+}
+.page-error .error {
+  display: block;
+}
+.page-error .container {
+  display: none;
+}
+@media all and (max-width: 1000px) {
+  .container {
+    display: none;
+  }
+  .error {
+    display: block;
+    font-size: 22px;
+  }
+}
