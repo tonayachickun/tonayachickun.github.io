@@ -161,13 +161,13 @@ body {
   background-clip: padding-box;
 }
 #mediumHomepage {
-  top: 100%;
-  right: 5%;
+  top: 103%;
+  right: 9%;
 }
 .iphone {
   position: fixed;
   right: 40%;
-  top: 102%;
+  top: 110%;
   width: 16%;
 }
 .iphone-frame {
@@ -179,8 +179,8 @@ body {
   opacity: 0;
 }
 .iphone-viewport {
-  width: 255px;
-  height: 255px;
+  width: 250px;
+  height: 450px;
   position: absolute;
   top: 6%; 
   left: 3%;
@@ -188,6 +188,7 @@ body {
 }
 .iphone-content {
   position: absolute;
+  border-radius: 5px;
   top: 0;
   left: 0;
   width: 100%;
