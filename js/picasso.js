@@ -262,10 +262,7 @@
     init = function() {
       scrollIntervalID = setInterval(updatePage, 10);
       setupValues();
-      $window.resize(throwError)
-      if(isTouchDevice) {
-        $window.resize(throwError)
-      }
+      
     }
 
     setupValues = function() {
@@ -435,9 +432,7 @@
       return value;
     }
 
-    throwError = function() {
-      $body.addClass('page-error')
-    }
+    
 
     isTouchDevice = function() {
       return 'ontouchstart' in window // works on most browsers 
