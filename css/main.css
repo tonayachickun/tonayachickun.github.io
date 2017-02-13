@@ -39,7 +39,7 @@ body {
   text-transform: uppercase;
 }
 .name {
-  font-size: 35px;
+  font-size: 24px;
   letter-spacing: 12px;
   line-height: 1.5;
   font-weight: 900;
@@ -87,14 +87,15 @@ body {
 --------------------------------------- */
 #domExplosionList {
   position: fixed;
-  width: 410px;
-  top: 100%;
+  width: 360px;
+  top: 85%;
+  opacity: 0;
   right: 25%;
 }
 .dom-explosion-item-1, .dom-explosion-item-2, .dom-explosion-item-3, .dom-explosion-item-4, .dom-explosion-item-5, .dom-explosion-item-6, .dom-explosion-item-7, .dom-explosion-item-8, .dom-explosion-item-9, .dom-explosion-item-10, .dom-explosion-item-11, .dom-explosion-item-12, .dom-explosion-item-13, .dom-explosion-item-14, .dom-explosion-item-15, .dom-explosion-item-16{
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 .dom-explosion-item-1 {
   background-image: url(../img/1.jpg);
@@ -136,17 +137,17 @@ body {
   background-image: url(../img/13.jpg);
 }
 .dei-1  { top: 0;   left: 0;  }
-.dei-2  { top: 0;   left: 210px; }
-.dei-3  { top: 0;   left: 420px; }
-.dei-4  { top: 0;   left: 630px }
-.dei-5  { top: 210px;   left: 0;  }
-.dei-6  { top: 210px;   left: 210px; }
-.dei-7  { top: 210px;   left: 420px; }
-.dei-8  { top: 210px;   left: 630px }
-.dei-9  { top: 420px;   left: 0;  }
-.dei-10 { top: 420px;   left: 210px; }
-.dei-11 { top: 420px;   left: 420px; }
-.dei-12 { top: 420px;   left: 630px }
+.dei-2  { top: 0;   left: 160px; }
+.dei-3  { top: 0;   left: 320px; }
+.dei-4  { top: 0;   left: 480px }
+.dei-5  { top: 160px;   left: 0;  }
+.dei-6  { top: 160px;   left: 160px; }
+.dei-7  { top: 160px;   left: 320px; }
+.dei-8  { top: 160px;   left: 480px }
+.dei-9  { top: 320px;   left: 0;  }
+.dei-10 { top: 320px;   left: 160px; }
+.dei-11 { top: 320px;   left: 320px; }
+.dei-12 { top: 320px;   left: 480px }
 
 
 /* 3. Images Keyframe
@@ -178,8 +179,8 @@ body {
   opacity: 0;
 }
 .iphone-viewport {
-  width: 340px;
-  height: 289px;
+  width: 255px;
+  height: 255px;
   position: absolute;
   top: 6%; 
   left: 3%;
@@ -199,14 +200,16 @@ body {
 --------------------------------------- */
 #links {
   position: fixed;
-  top: 0%;
-  left: 15%;
-  width: 70%;
+  width: 100%;
   height: 100%;
   color: #fff;
   text-align: center;
   opacity: 0;
-  background-image: url(../img/last.jpg);
+  background: url(../img/last.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-size: 100%;
 }
 
